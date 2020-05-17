@@ -1,0 +1,131 @@
+
+.title {
+    color: crimson;
+}
+.container {
+    border: 20px solid darkcyan;
+    margin: 10px;
+    padding-inline: 10px 15px 10px 5px;
+}
+.box{
+
+     background-color: blue;
+     height:300px;
+     width:300px;
+     margin:10px;
+     
+}
+.contact-box{
+    display: flex;
+      justify-content: center;
+}
+.row{
+    margin: 30px;
+}
+.input-field{
+    margin: 20px;
+}
+nav {
+    text-align: center;
+    background-color: cornflowerblue;
+}
+a{
+    text-decoration: none;
+}
+nav ul{
+  list-style: none;
+} 
+nav li{
+    display: inline-block;
+    padding: 40px;
+}
+img {
+    border-radius: 50%;
+    box-shadow:10px 10px 10px blue;
+}
+.flex{
+    display:flex;
+    flex-wrap: wrap;
+    border: 30px solid green;
+    margin: 10px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+   
+}
+@keyframes myFade{
+    0%
+    {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#box1{
+    animation-name: myFade;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+}
+@keyframes fades{
+    0%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#box2{
+ animation-name: fades;
+ animation-duration: 4s;
+ animation-timing-function: ease-in-out;
+ animation-iteration-count: 4;
+ background-image:radial-gradient(circle,purple,green,black,purple);
+}
+@keyframes bigBox{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(.5);
+    }
+}
+#box3{
+    animation: bigBox infinite 8s ease-in;
+    background-color: khaki;
+}
+@keyframes colorc{
+    0%{
+        left:0px;top: 0px;
+    }
+    25%{
+        left:100px;top:200px;
+    }
+    50%{
+        left:100px;top:200px;
+    }
+    75%{
+        left:0px;top:200px;
+    }
+    100%{
+        left:0px;top:0px;
+    }
+}
+#box4{
+    animation:colorc infinite 3s;
+    position:relative;
+    background:red;
+}
+form input,textarea,button{
+    display: block;
+    margin: 30px;
+}
+
+
